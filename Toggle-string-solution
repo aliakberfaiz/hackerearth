@@ -1,0 +1,15 @@
+s = input()
+print(s.swapcase())
+
+# the above is very simple code. otherwise the best is given below:
+
+
+import sys
+a = list(sys.stdin.readline())
+answer = ''
+for elem in a:
+	if elem.isupper():
+		answer += elem.lower()
+	else:
+		answer += elem.upper()
+print(answer)
