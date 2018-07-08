@@ -1,0 +1,19 @@
+ii = int(input())
+for q in range(0,ii):
+    t = input()
+    A = list(t)
+    count =0
+    vowels = ['A','E','I','O','U','a','e','i','o','u']
+
+    for i in A:
+        try:
+          temp = vowels.index(i)
+          count +=1
+          continue
+        
+        except ValueError:
+        
+          continue
+
+
+    print(count)
